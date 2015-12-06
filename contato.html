@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<!--define html5 com a linguagem de portugues do Brasil-->
+<html lang="pt-br">
+
+    <head>
+        <!--define o tipo como UTF8 e titulo Gustavo Oliveira-->
+        <meta charset="UTF-8" />
+        <title>Gustavo Oliveira - Até daria para entrar em contato comigo, se
+        o formulário funcionasse kkk</title>
+        <!--a abertura do link indica o estilo css e o caminho-->
+        <script src="_scripts/funcoes.js"></script>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="_css/contato.css" />
+    </head>
+
+    <!--indica o corpo, onde vai ficar todo o conteudo do site-->
+    <body>
+        <script src="_scripts/funcoes.js"></script>
+        <!--div principal do site-->
+        <div id="interface">
+            <!--o top do cite-->
+            <header id="cabecalho">
+                <!--indica um grupo de titulos-->
+                <hgroup>
+                    <!--os espassamento são proposital-->
+                    <h1>Gustavo Oliveira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h2>"...rasteje mas continue em <br />frente de qualquer jeito." -  
+                        <a href="http://pt.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank"
+                           style="text-decoration: underline;
+                           color: black;"
+                           >   Martin Luther King </a>
+                    
+                    </h2>
+                </hgroup>
+
+                <!--indica uma imagem-->
+                <figure>
+                    <img src="_imagens/contato.png" id="icone" alt="Imagem Pessoal" />
+                </figure>
+
+                <!--menu do site-->
+                <nav id="menu">
+                    <!--O título e para semantica-->
+                    <h1>Página Principal</h1>
+                    <ul>
+                       <a href="index.html" onmousemove="mudafoto('_imagens/gustavo.jpg')"><li>Home</li></a>
+                        <a href="curriculo.html" 
+                               onmousemove="mudafoto('_imagens/curriculo.png')"
+                               onmouseout="mudafoto('_imagens/contato.png')"><li>Currículo</li></a>
+                        <a href="fotos.html"
+                               onmousemove="mudafoto('_imagens/fotos.png')"
+                               onmouseout="mudafoto('_imagens/contato.png')"><li>Fotos</li></a>
+                        <a href="contato.html"
+                               onmousemove="mudafoto('_imagens/contato.png')"
+                               onmouseout="mudafoto('_imagens/contato.png')"
+                               ><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="corpo-full">
+                <article id="noticia-principal">
+
+                    <form method="post">
+                    <p style="color:black;">O formulário não funciona, entre em contato por e-mail: g.92oliveira@gmail.com</p>
+                    <!--define uma quantidade de campos-->
+                    <fieldset id="contact">
+                        <legend>Dados Pessoais</legend>
+                        <p><label for="cNome">Nome: </label>
+                            <input type="text" name="tNome" id="cNome" size="20" 
+                                   maxlength="18" required 
+                                   placeholder="ex: Gustavo" />
+                        </p>
+                        
+                        <p>
+                            <label for="cSnome">SobreNome: </label>
+                            <input type="text" name="tSnome" id="cSnome" size="20"
+                                   maxlength="18" required placeholder="ex: Oliveira" />
+                        </p>
+                        
+                        <p>
+                            <label for="cEmail">Email: </label>
+                            <input type="email" name="tEmail" id="cEmail"
+                                   placeholder="Ex: endereco@servidor.com" maxlength="35"
+                                   size="35" required />
+                        </p>
+                        
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                                <input type="radio" name="tSexo" id="cMasc" checked />
+                                <label for="cMasc">Masculino</label><br/>
+                                <input type="radio" name="tSexo" id="cFem" />
+                                <label for="cFem">Feminino</label>
+                        </fieldset>
+                        
+                        <p>
+                            <label for="cNasc">Data de Nascimento: </label>
+                            <input type="date" name="tNasc" id="cNasc" required />
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset id="address">
+                        <legend>Informações Residenciais</legend>
+                        <p>
+                            <label for="cLog">Logradouro: </label>
+                            <input type="text" name="tLog" id="cLog" size="30"
+                                   maxlength="28" placeholder="Rua, Av, Travessa" />
+                        </p>
+                        <p>
+                            <label for="cNum">Numero: </label>
+                            <input type="number" min="1" max="9999" name="tNum" id="cNum" />
+                        </p>
+                        
+                        <p>
+                            <label for="cEst">Estado: </label>
+                            <select name="tEst" id="cEst">
+                                <optgroup label="Sudeste">
+                                    <option selected>São Paulo</option>
+                                    <option>Rio de Janeiro</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option>Minas Gerais</option>
+                                </optgroup>
+                                <optgroup label="outros">
+                                    <option>Amazonas</option>
+                                    <option>Paraná</option>
+                                    <option>Ceará</option>
+                                    <option>Amapá</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        
+                        <p>
+                            <label for="cCid">Cidade: </label>
+                            <input name="tCid" id="cCid" size="20"
+                                   maxlength="18" placeholder="Ex: Carapicuiba"
+                                   list="cidades"/>
+                            <datalist id="cidades">
+                                <option value="Carapicuiba"></option>
+                                <option value="Osasco"></option>
+                                <option value="Barueri"></option>
+                            </datalist>
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset id="message">
+                        <legend>Mensagem</legend>
+                        <p>
+                            <label for="cUrg">Grau de Urgencia: </label><br/>
+                            MIN <input type="range" name="tUrg" id="cUrg" min="0"
+                                      max="10" step="2"/> MAX
+                        </p>
+                        <p>
+                            <label for="cAss">Assunto: </label><br/>
+                            <input type="text" name="tAss" id="cAss" required
+                                   size="30" maxlength="28" placeholder="Ex: Acesso ao DropBox" />
+                        </p>
+                        <p>
+                            <label for="cMsg">Mensagem: </label><br />
+                            <textarea name="tMsg" id="cMsg" cols="25" rows="5"
+                                      placeholder="Digite a sua mensagem" ></textarea>
+                        </p>
+                        <input id="send" type="submit" value="Enviar" onclick="alert('Enviado com sucesso')" />
+                    </fieldset>
+                    
+                    
+                    
+                </form>
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p> Copiright 2014 - by Gustavo Oliveira</p>
+                <p id="direitos">   <a href="#">Facebook</a> | <a href="#">Twitter</a></p>   
+            </footer>
+        </div>
+    </body>
+</html>

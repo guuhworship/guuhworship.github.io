@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2014, 2:35:16 PM
+    Author     : Guuh
+*/
+@charset "UTF-8";
+
+ul#album-foto{
+    /*tamanho do album*/
+    width: 700px;
+    /*tamanho da margem e local*/
+    margin:  0 auto;
+    padding: 50px;
+    overflow: hidden;
+    /*tira o estilho da UL*/
+    list-style: none;    
+}
+
+ul#album-foto li{
+   /*deixa o menu lado a lado*/
+   float: left;
+   /*deixa o espaço de 'li' de 200 pixels*/
+   width: 200px;
+   /*cada foto com o tamanho de altura e largura de 200pixels*/
+   height: 200px;
+   margin: 10px;
+   /*borda de 5px  solida de cor branca*/
+   border:  5px rgba(130,162,244, 0.8) solid;
+   border-radius: 5px;
+   /*fundo branco*/
+   background-color: white;
+   /*borda esfumaçantee*/
+   /*funto lateral baixo*/ 
+   box-shadow: 15px 10px 5px  rgba(0,0,0,0.4);
+   transition: all 1s ease-in;  
+}
+
+ul#album-foto li:hover{
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+    transform: scale(1.5);
+}
+
+ul#album-foto li:hover span{
+    opacity: 1;
+    transition: 2s;
+}
+
+ul#album-foto li span{
+    opacity: 0;
+    color: #fff;
+    /*texto esfumacante*/
+    text-shadow: 1px 1px 1px 1px black;
+    /*fundo*/
+     background-color: rgba(0,0,0,0.3);
+     font-size: 14px;
+     line-height: 370px;
+     padding: 5px;
+}
+
+
+/*=================FOTO1=========*/
+ul#album-foto li#foto01{
+    background: url('../_imagens/_galery/foto01.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*=================F0T0 2=============*/
+ul#album-foto li#foto02{
+    background: url('../_imagens/_galery/foto02.jpg') no-repeat;
+    background-position: 60% 30%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*================FOTO 3================*/
+ul#album-foto li#foto03{
+    background: url('../_imagens/_galery/foto03.jpg') no-repeat;
+    background-position: 60% 30%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+/*==========================FOTO 4=============*/
+ul#album-foto li#foto04{
+    background: url('../_imagens/_galery/foto04.jpg') no-repeat;
+    background-position: 50% 30%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+/*================FOTO 5==================*/
+ul#album-foto li#foto05{
+    background: url('../_imagens/_galery/foto05.jpg') no-repeat;
+    background-position: 20% 90%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*======================FOTO 6============*/
+ul#album-foto li#foto06{
+    background: url('../_imagens/_galery/foto06.jpg') no-repeat;
+    background-position: 50% 40%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#album-foto li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+@media screen and (max-width: 600px){
+    article#noticia-principal{
+        display: none;
+    }
+    
+    div#alerta-mobile{
+        display: block;
+    }
+}

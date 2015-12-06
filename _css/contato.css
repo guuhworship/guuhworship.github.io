@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2014, 12:31:41 PM
+    Author     : Guuh
+*/
+
+@charset 'UTF-8';
+
+fieldset{
+    width: 500px;
+    margin: 10px;
+    border: 1px rgba(130,162,244, 0.3) groove;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    color: black;
+}
+
+fieldset#sexo{
+    width: 150px; 
+}
+
+input, textarea{
+    background-color: rgba(255,255,255, 0.4);
+    transition: 2s;
+    border-radius: 3px;
+}
+
+input:hover, textarea:hover{
+    background-color: rgba(130,162,244, 0.2);
+}
+
+input#send{
+    background-color: rgba(130,162,244, 0.4);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 2s;
+}
+
+input#send:hover{
+    background-color: #cccccc;
+}
+
+fieldset#contact{
+    background: url('../_imagens/_contato/icone-contato.png') no-repeat 95% 95%;
+}
+
+fieldset#address{
+    background: url('../_imagens/_contato/icone-endereco.png') no-repeat 95% 95%;
+}
+
+fieldset#message{
+    background: url('../_imagens/_contato/icone-mensagem.png') no-repeat 95% 95%;
+}
+
+@media screen and (max-width: 600px){
+    fieldset{
+        margin: 0px;
+        font-size: 10px;
+        width: 96%;
+    }
+    
+    label{
+        /*display: none;*/
+    }
+    
+    input, textarea{
+        width: 200px;
+    }
+}

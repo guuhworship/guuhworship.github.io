@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--define html5 com a linguagem de portugues do Brasil-->
+<html lang="pt-br">
+
+    <head>
+        <!--define o tipo como UTF8 e titulo Gustavo Oliveira-->
+        <meta charset="UTF-8" />
+        <title>Gustavo Oliveira - Minhas fotos com os meus amigos, família e claro.. 
+        meu lado musical.</title>
+        <!--a abertura do link indica o estilo css e o caminho-->
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="_css/fotos.css" />
+    </head>
+
+    <!--indica o corpo, onde vai ficar todo o conteudo do site-->
+    <body>
+        <script src="_scripts/angular.min.js" type="text/javascript"></script>
+        <script src="_scripts/funcoes.js"></script>
+        <!--div principal do site-->
+        <div id="interface">
+            <!--o top do cite-->
+            <header id="cabecalho">
+                <!--indica um grupo de titulos-->
+                <hgroup>
+                    <!--os espassamento são proposital-->
+                    <h1>Gustavo Oliveira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                   <h2>"...rasteje mas continue em <br />frente de qualquer jeito." -  
+                        <a href="http://pt.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank"
+                           style="text-decoration: underline;
+                           color: black;"
+                           >   Martin Luther King </a>
+                    
+                    </h2>
+                </hgroup>
+
+                <!--indica uma imagem-->
+                <figure>
+                    <img src="_imagens/fotos.png" id="icone" alt="Imagem Pessoal" />
+                </figure>
+
+                <!--menu do site-->
+                <nav id="menu">
+                    <!--O título e para semantica-->
+                    <h1>Página Principal</h1>
+                    <ul>
+                       <a href="index.html" onmousemove="mudafoto('_imagens/gustavo.jpg')"><li>Home</li></a>
+                        <a href="curriculo.html" 
+                               onmousemove="mudafoto('_imagens/curriculo.png')"
+                               onmouseout="mudafoto('_imagens/fotos.png')"><li>Currículo</li></a>
+                        <a href="fotos.html"
+                               onmousemove="mudafoto('_imagens/fotos.png')"
+                               onmouseout="mudafoto('_imagens/fotos.png')"><li>Fotos</li></a>
+                        <a href="contato.html"
+                               onmousemove="mudafoto('_imagens/contato.png')"
+                               onmouseout="mudafoto('_imagens/fotos.png')"
+                               ><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="corpo-full">
+                <div id="alerta-mobile">
+                    <p style="color: rgba(130,162,244, 0.8)">
+                        Esta pagina só funciona em Desktop.
+                    </p>
+                </div>
+                <article id="noticia-principal">
+                        <ul id="album-foto">
+                            <li id="foto01"><span>Eu e o amor da minha vida.</span></li>
+                            <li id="foto02"><span>Eu e meu amigo Gustavo</span></li>
+                            <li id="foto03"><span>Meus pedais</span></li>
+                            <li id="foto04"><span>Tocando Piano</span></li>
+                            <li id="foto05"><span>Parque Vila Lobos</span></li>
+                            <li id="foto06"><span>Minha irmã e minha mãe</span></li>
+                        </ul>
+                </article>
+            </section>
+            <footer id="rodape">
+                <p> Copiright 2014 - by Gustavo Oliveira</p>
+                <p id="direitos">   <a href="#">Facebook</a> | <a href="#">Twitter</a></p>   
+            </footer>
+        </div>
+    </body>
+</html>

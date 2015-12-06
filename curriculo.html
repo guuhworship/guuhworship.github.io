@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<!--define html5 com a linguagem de portugues do Brasil-->
+<html lang="pt-br">
+
+    <head>
+        <!--define o tipo como UTF8 e titulo Gustavo Oliveira-->
+        <meta charset="UTF-8" />
+        <title>Minha Formação profissional, currículo</title>
+        <!--a abertura do link indica o estilo css e o caminho-->
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="_css/curriculo.css" />
+    </head>
+
+    <!--indica o corpo, onde vai ficar todo o conteudo do site-->
+    <body>
+        <script src="_scripts/funcoes.js"></script>
+        <!--div principal do site-->
+        <div id="interface">
+            <!--o top do cite-->
+            <header id="cabecalho">
+                <!--indica um grupo de titulos-->
+                <hgroup>
+                    <!--os espassamento são proposital-->
+                    <h1>Gustavo Oliveira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                   <h2>"...rasteje mas continue em <br />frente de qualquer jeito." -  
+                        <a href="http://pt.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank"
+                           style="text-decoration: underline;
+                           color: black;"
+                           >   Martin Luther King </a>
+                    
+                    </h2>
+                </hgroup>
+
+                <!--indica uma imagem-->
+                <figure>
+                    <img src="_imagens/curriculo.png" id="icone" alt="Imagem Pessoal" />
+                </figure>
+
+                <!--menu do site-->
+                <nav id="menu">
+                    <!--O título e para semantica-->
+                    <h1>Página Principal</h1>
+                    <ul>
+                        <a href="index.html" onmousemove="mudafoto('_imagens/gustavo.jpg')"><li>Home</li></a>
+                        <a href="curriculo.html" 
+                           onmousemove="mudafoto('_imagens/curriculo.png')"
+                           onmouseout="mudafoto('_imagens/curriculo.png')"><li>Currículo</li></a>
+                        <a href="fotos.html"
+                           onmousemove="mudafoto('_imagens/fotos.png')"
+                           onmouseout="mudafoto('_imagens/curriculo.png')"><li>Fotos</li></a>
+                        <a href="contato.html"
+                           onmousemove="mudafoto('_imagens/contato.png')"
+                           onmouseout="mudafoto('_imagens/curriculo.png')"
+                           ><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="corpo-full">
+                <article id="noticia-principal">
+
+                    <table id="tabelaspec">
+                        <caption>Gustavo Oliveira</caption>
+                        <!-- Dados pessoais -->
+                        <tr class="ce"><td class="cd">Solteiro, brasileiro, 22 anos</td></tr>
+                        <tr class="ce"><td class="cd">E-mail: g.92oliveira@gmail.com</tr>
+
+                        <!-- Objetivo0 -->
+                        <tr class="ce"><td class="cd"><h1>Objetivo</h1></td></tr>
+                        <tr class="ce"><td class="cd">Atuar como analista/desenvolvedor em JavaEE</td></tr>
+
+                        <!--Informacoes da graduacao -->
+                        <tr class="ce"><td class="cd"><h1>Formação Acadêmica</h1></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >Faculdade Tecnológica de Carapicuíba (FATEC)</span></td></tr>
+                        <tr class="ce"><td class="cd"> <span class="negrito" >Curso:</span> Sistemas para Internet (<span class="negrito" >Completo</span>)</td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >E.E Profº Manoel da Conceição Santos</span></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >Curso:</span> Ensino Médio (<span class="negrito" >Completo</span>)</td></tr>
+ 
+                        <!-- Cursos complementades -->
+                        <tr class="ce"><td class="cd"><h1>Cursos Complementares</h1></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >Wizard Idiomas</span>
+                                <ul><li>Inglês Avançado <span class="negrito" >(Cursando)</span></li></ul>
+                            </td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >GlobalCode 
+                                    <!--(114 horas)-->
+                                </span>
+                                <ul>
+                                    <li> Java EE6 Enterprise Architect (Oracle Certified Master)</li>
+                                </ul>
+                            </td></tr>
+                                  <tr class="ce"><td class="cd"><span class="negrito" >Alura  
+                                    <!--(114 horas)-->
+                                </span>
+                                <ul>
+                                    <li>Agile</li>
+                                    <li>AngularJS</li>
+                                </ul>
+                            </td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >K19 Treinamentos 
+                                    <!--(114 horas)-->
+                                </span>
+                                <ul>
+                                    <li>Formação Desenvolvedor Java Avançado </li>
+                                    <ul>
+                                        <li>Integração Web Services, JMS e EJB</li>
+                                        <li>Web Avançado JSF2, EJB 3.1 e CDI</li>
+                                        <li>Persistência JPA2 e Hibernate</li>
+                                    </ul>
+                                    <li>Desenvolvimento Web com JSF2 e JPA2 </li>
+                                </ul>
+                            </td></tr>
+
+                        <tr class="ce"><td class="cd"><span class="negrito" >Sansumg 
+                                    <!--(4 horas)-->
+                                </span>
+                                <ul><li>FrameWork Samsung para Android</li></ul>
+                            </td></tr>
+
+                        <tr class="ce"><td class="cd"><span class="negrito" >IME-USP
+                                    <!--(30 horas)-->
+                                </span>
+                                <ul><li>Java Orientado a Objetos</li></ul>
+                            </td></tr>
+
+                        <tr class="ce"><td class="cd"><span class="negrito" >Colmeia – Instituição a Serviço da Juventude
+                                    <!--(400 horas)-->
+                                </span>
+                                <ul><li>Web Design, Office, Hardware, Redes, Português, Matemática </li></ul>
+                            </td></tr>
+
+                        <tr class="ce"><td class="cd"><span class="negrito" >CIEE/IMPACTA
+                                    <!--(84 horas)-->
+                                </span>
+                                <ul><li>Introdução a Lógica de Programação</li>
+                                    <li> Conceceitos e Infraestrutura de Redes </li>
+                                    <li>Introdução à Linguagem SQL </li>
+                                </ul>
+                            </td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito" >Centro de Integração Empresa Escola - CIEE 
+                                    <!--(68 horas)-->
+                                </span>
+                                <ul>
+                                    <li> Oficina de Infraestrutura de Redes IP, Wireless – Redes Convergentes </li>
+                                    <li>Linux Desvendando seus Segredos, HTML, Windows+Word Básico</li>
+                                </ul>
+                            </td></tr>
+
+                        <!-- Experiencia profissional -->
+                        <tr class="ce"><td class="cd"><h1>Experiência Profissional</h1></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">TIVIT</span></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Cargo:</span>Analista Programador III (02/02/2015 - atual)</td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Atividades Desenvolvidas:</span> Projeto Contrata2 (Traspetro/Petrobras) Desenvolvimento e melhorias em Java 5, 
+                                JPA 1.0,  AngularJs, Html5, css3, Bootstrap, javascript, IDE de desenvolvimento Sap Netwaver, 
+                                Sap EjbExplorer, Sap Log, Log4j, criação de templates com freemarker, alteração de Bpmn, 
+                                desenvolvimento de serviços REST em java.  
+                            </td></tr>
+                        <tr><td><br /></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Ericsson Inovação S.A</span></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Cargo:</span> Estagiário em Infraestrutura e Desenvolvimento (14/01/2013 – 12/12/2013)</td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Atividades Desenvolvidas:</span> Monitorar servidores Linux, melhorias, documentações e Plug-ins para ferramentas Atlassian 
+                                (Jira, Confluence, Crowd, Fisheye) , manutenção, gerenciamento e migração do gerenciadores de conteúdos WordPress, Moodle. 
+                                Jirasync (ferramenta interna), exportação de dados PostgreSQL para Oracle e analise de logs, gerenciamento e 
+                                melhorias em Java de ferramentas internas (Notifier, Empacotador, Envman), instalação Oracle 11g R2 em 
+                                Linux CentOS 5.6. Projeto Inventário, desenvolvido com Jsf 2.0, JPA, EJB, LDAP, PrimeFaces.
+                            </td></tr>
+                        <tr><td><br /></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Sonda ProkWork</span></td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Cargo:</span> Analista HelpDesk (02/03/2011 – 24/11/2011)</td></tr>
+                        <tr class="ce"><td class="cd"><span class="negrito">Atividades Desenvolvidas:</span> Suporte Técnico, Manutenção remota em computadores thin clien e desktop
+                                e serviços como Técnico de Informação.
+                            </td></tr>
+
+                        <!-- 
+                        <tr class="ce"><td class="cd"><h1>Idiomas</h1></td></tr>
+                        <tr class="ce"><td class="cd">Inglês Intermediário</td></tr>
+						Idioma -->
+                        <!-- Informações adicionais -->
+                        <tr class="ce"><td class="cd"><h1>Informações Adicionais</h1></td></tr>
+                         <tr class="ce"><td class="cd"><span class="negrito">Tema de Graduação: </span>      
+                                                <ul>
+                                                    <li>Controle de Ambientes WEB Climatizados com Arduino (dezembro de 2014)</li>
+                                                </ul>							  
+                                            </td></tr>
+										
+                                        <tr class="ce"><td class="cd"><span class="negrito">Trabalhos Voluntários: </span>      
+                                                <ul>
+                                                    <li>FATEC Carapicuíba - Monitoria em Java Orientado a Objetos (dezembro de 2014)</li>
+                                                    <li>FATEC Carapicuíba - Monitoria em Java Orientado a Objetos (dezembro de 2014)</li>
+                                                    <li>Assinante Alura by Caelum.</li>
+													<li><a href="http://www.quasares.org" target="_blank" style="text-decoration:underline; color:black;" >Grupo Quasares</a> - Gestão e acessoria de projetos Sociais</li>
+                                                </ul>							  
+                                            </td></tr>
+
+                        <tr class="ce"><td class="cd"><span class="negrito">Específicos: </span>
+                                <ul>
+                                    <li><span class="negrito">Web:</span> HTML5, CSS3, JavaScript, Intel XDK (FrameWork de aplicações móveis híbridas), Bootstrap.</li>
+                                    <li><span class="negrito">Java:</span> JSF 2.2, JPA2+Hibernate, EJB 3.1, PrimeFaces, Android, RichFaces, Log4j.</li>
+                                    <li><span class="negrito">Servidores de Aplicação: </span> LAMP, TomCat, Jboss, Glassfish.</li>
+                                    <li><span class="negrito">Controladores de Versões: </span>SVN e CVS.</li>
+                                    <li><span class="negrito">Atlassian:</span> Jira, Crowd, Confluence, Fisheye e plugins...</li>
+                                    <li><span class="negrito">Microsoft:</span> C#, Asp.net Mvc4, WindowsPhone.</li>
+                                    <li><span class="negrito">Banco de Dados: </span>Mysql, PostGre, SqlServer.</li>
+                                    <li><span class="negrito">Linux:</span>CentOS, LAMP, Oracle 11g R2.</li>
+                                    <ul>
+                                        </td></tr>                       
+                                        </table>
+                                        <button class="no-css" style="background-color: rgba(130,162,244, 0.4);
+                                                position: relative;
+                                                font-size: 20px;
+                                                margin:10px;
+                                                right: 250px;
+                                                float: right;
+                                                padding: 10px;
+                                                border-radius: 5px;
+                                                ">
+                                            <a href="_files/Gustavo Oliveira.pdf" style="text-decoration:none; color: black; " target="_blank">Download do Currículo em PDF</a>
+                                        </button>
+                                        <div id="mobile">
+                                            <a href="_files/Gustavo Oliveira.pdf" style="text-decoration:none;" target="_blank">Download do Currículo em PDF</a>
+                                        </div>
+                                        </article>
+                                        </section>
+
+                                        <footer id="rodape">
+                                            <p> Copiright 2014 - by Gustavo Oliveira</p>
+                                            <p id="direitos">   <a href="#">Facebook</a> | <a href="#">Twitter</a></p>   
+                                        </footer>
+                                        </div>
+                                        </body>
+                                        </html>

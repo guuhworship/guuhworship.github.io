@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--define html5 com a linguagem de portugues do Brasil-->
+<html lang="pt-br">
+
+    <head>
+        <!--define o tipo como UTF8 e titulo Gustavo Oliveira-->
+        <meta charset="UTF-8" />
+        <title>Gustavo Oliveira - Resumo da minha personalidade, e informações pessoais</title>
+        <!--a abertura do link indica o estilo css e o caminho-->
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!--indica o corpo, onde vai ficar todo o conteudo do site-->
+    <body>
+        <script src="_scripts/funcoes.js"></script>
+        <!--div principal do site-->
+        <div id="interface">
+            <!--o top do cite-->
+            <header id="cabecalho">
+                <!--indica um grupo de titulos-->
+                <hgroup>
+                    <!--os espassamento são proposital-->
+                    <h1>Gustavo Oliveira &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h2>"...rasteje mas continue em <br />frente de qualquer jeito." -  
+                        <a href="http://pt.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank"
+                           style="text-decoration: underline;
+                           color: black;"
+                           >   Martin Luther King </a>
+                    
+                    </h2>
+                </hgroup>
+
+                <!--indica uma imagem-->
+                <figure>
+                    <img src="_imagens/gustavo.jpg" id="icone" alt="Imagem Pessoal" />
+                </figure>
+
+                <!--menu do site-->
+                <nav id="menu">
+                    <!--O título e para semantica-->
+                    <h1>Página Principal</h1>
+                    <ul>
+                       <a href="index.html" onmousemove="mudafoto('_imagens/gustavo.jpg')"><li>Home</li></a>
+                        <a href="curriculo.html" 
+                               onmousemove="mudafoto('_imagens/curriculo.png')"
+                               onmouseout="mudafoto('_imagens/gustavo.jpg')"><li>Currículo</li></a>
+                        <a href="fotos.html"
+                               onmousemove="mudafoto('_imagens/fotos.png')"
+                               onmouseout="mudafoto('_imagens/gustavo.jpg')"><li>Fotos</li></a>
+                        <a href="contato.html"
+                               onmousemove="mudafoto('_imagens/contato.png')"
+                               onmouseout="mudafoto('_imagens/gustavo.jpg')"
+                               ><li>Contato</li></a>
+                    </ul>
+                </nav>
+            </header>
+            <!--sessao-->
+            <section id="corpo">
+                <article id="noticia-principal">
+                    <h1>Quem sou eu?</h1>
+                    <p>Meu nome é Gustavo Oliveira, tenho 22 anos, nasci em Campo do Meio
+                        - MG em 1992, sou mineiro e fatecano com muito orgulho. 
+                        Como hobby toco violão, guitarra e tento cantar... 
+                        Minha carreira profissional na área da tecnologia da informação iniciou
+                        aos 13 anos de idade quando o meu tio (Denis Rocha) Analista de Sistemas parou para me 
+                        explicar o sistema da empresa na qual ele trabalha. 
+                        Apesar de não entender nada, decidi que era a área que gostaria de atuar, 
+                        pesquisar e me aprofundar. Aos 19 anos comecei minha graduação na 
+                        Faculdade de Tecnologia de Carapicuíba (FATEC), 
+                        No 3º Ciclo do curso iniciei o meu estágio na Ericsson Inovação (EISA), 
+                        tenho muito a agradecer a empresa e aos colaboradores, 
+                        pela oportunidades e desafios. No 4º Ciclo do curso sabia onde queria
+                        atuar e fiz formação Java Avançado na K19. Estou sempre interessado em 
+                        aprender e me desenvolver como profissional.    </p>
+
+                    <figure class="foto-legenda">
+                        <!--usado para o mecanismo de busca-->
+                        <img src="_imagens/gustavo1.jpg" />
+                        <figcaption><h3>Gustavo Oliveira</h3>
+                            Nesta foto eu estava na praia com alguns amigos.
+                        </figcaption>
+                    </figure>
+                    <h1>Projetos Acadêmicos</h1>
+                    <p>Os links abaixo contém meus projetos deste semestre, tanto código quanto a aplicação.</p>
+                    <ul>
+                        <li>Financiamento (Imovel/Automóvel) - Android</li>
+                        <li>Sistema de Correios - Android</li>
+                        <li>Sistema de Correios (MVC) - Android</li>
+                        <li>Site Pessoal - HTML5+CSS3+JS</li>
+                        <li>Sistema de Mecanica - Documentação</li>
+                        <li>Web Escola - Asp.Net+MVC</li>
+                        <li>Projeto Windows Phone</li>
+                    </ul>
+
+<!--                    <h1 class="no-css"> Chris Tomlin - Indescribable</h1>
+
+                    <iframe width="420" height="315" 
+                            src="//www.youtube.com/embed/JM6mpt-X4LQ" 
+                            frameborder="0" allowfullscreen></iframe>-->
+                </article>
+            </section>
+
+            <!--lateral do site-->
+            <aside id="lateral">
+                <h1>Take me Away</h1>
+                <iframe width="280" height="175" src="//www.youtube.com/embed/zmJhtMFnp7E" 
+                        frameborder="0" allowfullscreen></iframe>
+
+                <h1>Mais sobre mim</h1>
+                <p><em>Estudo Guitarra na Escola de Música e Técnologia (EM&T)
+                    Estudo Canto na Harmonic Academia de Música.
+                    </em> -  <strong>Gustavo Oliveira</strong>
+                </p>
+
+
+            </aside>
+            <!--rodape-->
+            <footer id="rodape">
+                <p> Copiright 2014 - by Gustavo Oliveira</p>
+                <p id="direitos">   <a href="#">Facebook</a> | <a href="#">Twitter</a></p>   
+            </footer>
+        </div>
+    </body>
+</html>
