@@ -8,13 +8,13 @@
         <meta charset="UTF-8" />
         <title>Gustavo Oliveira - Resumo da minha personalidade, e informações pessoais</title>
         <!--a abertura do link indica o estilo css e o caminho-->
-        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="stylesheet" type="text/css" href="/css/estilo.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <!--indica o corpo, onde vai ficar todo o conteudo do site-->
     <body>
-        <script src="./_scripts/funcoes.js"></script>
+        <script src="/scripts/funcoes.js"></script>
         <!--div principal do site-->
         <div id="interface">
             <!--o top do cite-->
@@ -34,7 +34,7 @@
 
                 <!--indica uma imagem-->
                 <figure>
-                    <img src="./_imagens/gustavo.jpg" id="icone" alt="Imagem Pessoal" />
+                    <img src="/imagens/gustavo.jpg" id="icone" alt="Imagem Pessoal" />
                 </figure>
 
                 <!--menu do site-->
@@ -42,16 +42,16 @@
                     <!--O título e para semantica-->
                     <h1>Página Principal</h1>
                     <ul>
-                       <a href="index.html" onmousemove="mudafoto('./_imagens/gustavo.jpg')"><li>Home</li></a>
+                       <a href="index.html" onmousemove="mudafoto('/imagens/gustavo.jpg')"><li>Home</li></a>
                         <a href="curriculo.html" 
-                               onmousemove="mudafoto('./_imagens/curriculo.png')"
-                               onmouseout="mudafoto('./_imagens/gustavo.jpg')"><li>Currículo</li></a>
+                               onmousemove="mudafoto('/imagens/curriculo.png')"
+                               onmouseout="mudafoto('/imagens/gustavo.jpg')"><li>Currículo</li></a>
                         <a href="fotos.html"
-                               onmousemove="mudafoto('./_imagens/fotos.png')"
-                               onmouseout="mudafoto('./_imagens/gustavo.jpg')"><li>Fotos</li></a>
+                               onmousemove="mudafoto('/imagens/fotos.png')"
+                               onmouseout="mudafoto('/imagens/gustavo.jpg')"><li>Fotos</li></a>
                         <a href="contato.html"
-                               onmousemove="mudafoto('./_imagens/contato.png')"
-                               onmouseout="mudafoto('./_imagens/gustavo.jpg')"
+                               onmousemove="mudafoto('/imagens/contato.png')"
+                               onmouseout="mudafoto('/imagens/gustavo.jpg')"
                                ><li>Contato</li></a>
                     </ul>
                 </nav>
@@ -77,7 +77,7 @@
 
                     <figure class="foto-legenda">
                         <!--usado para o mecanismo de busca-->
-                        <img src="./_imagens/gustavo1.jpg" />
+                        <img src="/imagens/gustavo1.jpg" />
                         <figcaption><h3>Gustavo Oliveira</h3>
                             Nesta foto eu estava na praia com alguns amigos.
                         </figcaption>
